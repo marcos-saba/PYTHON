@@ -1,0 +1,16 @@
+print('-'*70)
+print(f'{'VERIFICADOR DE EMPRÉSTIMO':^70}')
+print('-'*70)
+valor_casa = float(input('\nInforme o valor da casa(R$): '))
+sal = float(input('Informe o salário(R$): '))
+ano = int(input('Informe em quantos anos será feito o pagamento: '))
+valor_parcela = valor_casa / (ano * 12)
+if valor_parcela > sal * 30/100:
+    print(f'Salário: \033[1;34mR${sal:.2f}\033[m.')
+    print(f'Valor das parcelas: \033[1;33mR${valor_parcela:.2f}\033[m.')
+    print('O valor das parcelas EXCEDE \033[1;4;31m30%\033[m do salário. Empréstimo \033[1;4;31mNEGADO\033[m.')
+else:
+    print(f'Salário: \033[1;34mR${sal:.2F}\033[m.')
+    print(f'Parcelas: \033[1;33mR${valor_parcela:.2f}\033[m')
+    print('O valor das parcelas não excede \033[1;4;31m30%\033[m do salário. Empréstimo \033[1;4;32mAPROVADO\033[m.')
+print('_'*70)
