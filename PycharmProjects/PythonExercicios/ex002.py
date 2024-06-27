@@ -1,0 +1,5 @@
+print('Bem vindo ao seu Assistente virtual!')
+nome = input('Digite seu nome: ')
+print('Prazer em te conhecer, {}!'.format(nome))
+pedido = input('Em que posso te ajudar? ')
+print('Infelizmente não vou conseguir te ajudar nesse momento. :(')

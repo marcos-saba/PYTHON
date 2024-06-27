@@ -1,0 +1,6 @@
+print('*'*15, 'CALCULADORA DE DESCONTO', '*'*15)
+preco = float(input('\nInforme o preço do produto(R$): '))
+desc = float(input('Informe o valor do desconto(%): '))
+novo = preco - (preco * desc / 100)
+print(f'Preço do produto com {desc}% de desconto: R${novo:.2f}.\n')
+print('*'*25, 'FIM', '*'*25)

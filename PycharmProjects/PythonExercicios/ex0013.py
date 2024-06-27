@@ -1,0 +1,6 @@
+print('+'*10, 'CALCULADORA DE SALÁRIO', '+'*10)
+sal = float(input('\nInforme o salário(R$): '))
+aum = float(input('Informe o valor do aumento (em %): '))
+novosal = sal + (sal * aum / 100)
+print(f'O novo salário com o reajuste de {aum:.2f}% será de R${novosal:.2f}.\n')
+print('+'*20, 'FIM', '+'*20)
