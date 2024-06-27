@@ -20,4 +20,3 @@ for c in range(1, total_semestre):
     print(f'Total acumulado até \033[1;34m{s}º\033[m semestre: \033[1;33mR${total:.2f}\n\033[m')
 print('_'*50)
 input(f'{'Pressione Enter para sair...':^50}')
-
