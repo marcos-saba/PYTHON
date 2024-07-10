@@ -3,11 +3,11 @@ nascimento = int(input('Ano de nascimento: '))
 idade = date.today().year - nascimento
 if idade <= 9:
     print(f'Idade: {idade} anos\nCategoria: MIRIN')
-elif 9 < idade <= 14:
+elif idade <= 14:
     print(f'Idade: {idade} anos\nCategoria: INFANTIL')
-elif 14 < idade <= 19:
+elif idade <= 19:
     print(f'Idade: {idade} anos\nCategoria: JUNIOR')
-elif idade == 20:
+elif idade <= 25:
     print(f'Idade: {idade} anos\nCategoria: SÊNIOR')
 else:
     print(f'Idade: {idade} anos\nCategoria: MASTER')
