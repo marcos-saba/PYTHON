@@ -1,5 +1,5 @@
-peso = float(input('Informe seu peso: '))
-alt = float(input('Informe sua altura: '))
+peso = float(input('Informe seu peso (kg): '))
+alt = float(input('Informe sua altura (m): '))
 imc = peso / pow(alt, 2)
 print('-'*33)
 print(f'IMC: {imc:.1f} \nVocê está com ', end='')
