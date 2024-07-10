@@ -44,9 +44,3 @@ else:
         print(f'Você: {opcao[jogador-1]}. \nComputador: {opcao[computador-1]}. '
               f'\n\nVocê {cores['verde']}GANHOU{cores['limpa']}!!! 🎉')
 print('_'*55)
-
-
-
-
-
-
