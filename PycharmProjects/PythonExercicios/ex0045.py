@@ -5,12 +5,13 @@ cores = {'limpa': '\033[m', 'azul': '\033[34m', 'amarelo': '\033[33m',
 print(f'-'*55)
 print(f'{'JO... KEN... PÔ':^50}')
 print('-'*55)
-print(f'''Vamos jogar Jokenpô?!
-Regras do jogo: 
-
-- {cores['amarelo']}PEDRA{cores['limpa']} ganha da {cores['vermelho']}TESOURA{cores['limpa']}, mas perde para o {cores['azul']}PAPEL{cores['limpa']};
-- {cores['azul']}PAPEL{cores['limpa']} ganha da {cores['amarelo']}PEDRA{cores['limpa']}, mas perde para a {cores['vermelho']}TESOURA{cores['limpa']};
-- {cores['vermelho']}TESOURA{cores['limpa']} ganha do {cores['azul']}PAPEL{cores['limpa']}, mas perde para a {cores['amarelo']}PEDRA{cores['limpa']}.''')
+print(f'Vamos jogar Jokenpô?!\n\nRegras do jogo:\n'
+      f'\n- {cores['amarelo']}PEDRA{cores['limpa']} ganha da {cores['vermelho']}TESOURA{cores['limpa']}, '
+      f'mas perde para o {cores['azul']}PAPEL{cores['limpa']};'
+      f'\n- {cores['azul']}PAPEL{cores['limpa']} ganha da {cores['amarelo']}PEDRA{cores['limpa']}, '
+      f'mas perde para a {cores['vermelho']}TESOURA{cores['limpa']};'
+      f'\n- {cores['vermelho']}TESOURA{cores['limpa']} ganha do {cores['azul']}PAPEL{cores['limpa']}, '
+      f'mas perde para a {cores['amarelo']}PEDRA{cores['limpa']}.')
 print('_'*55)
 print(f'''Escolha uma opção:
 
@@ -19,11 +20,11 @@ print(f'''Escolha uma opção:
 [ 3 ] {cores['vermelho']}TESOURA{cores['limpa']}
 ''')
 jogador = int(input('Sua opção: '))
-if jogador > 3:
+if jogador > 3 or jogador < 1:
     print(f'\nOpção {cores['vermelho']}INVÁLIDA{cores['limpa']}! Tente novamente.')
 else:
     computador = randint(1, 3)
-    opcao = ['PEDRA', 'PAPEL', 'TESOURA']
+    opcao = ('PEDRA', 'PAPEL', 'TESOURA')
     sleep(0.5)
     print(end='\nJO...')
     sleep(0.5)
@@ -32,6 +33,7 @@ else:
     print('PÔ!')
     sleep(0.5)
     print('')
+    print('-'*55)
     if jogador == 1 and computador == 1 or jogador == 2 and computador == 2 or jogador == 3 and computador == 3:
         print(f'Você: {opcao[jogador-1]}. \nComputador: {opcao[computador-1]}. '
               f'{cores['amarelo']}\n\nEMPATE{cores['limpa']}! 🙂')
