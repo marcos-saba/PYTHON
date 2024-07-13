@@ -1,1 +1,1 @@
-Repositório para meus estudos em Pythoon. 
+Repositório para meus estudos em Python. 
