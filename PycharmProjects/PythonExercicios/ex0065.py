@@ -1,9 +1,7 @@
 print(f'{' VERIFICADOR DE VALORES 2.0 ':=^70}')
 opt = ''
 cont = 1
-soma = 0
-maior = 0
-menor = 0
+soma = maior = menor = 0
 print('')
 while opt != 'N':
     num = int(input('Digite um número: '))
@@ -12,8 +10,7 @@ while opt != 'N':
         print('Opção INVÁLIDA! Tente novamente.')
         opt = str(input('Quer continuar [S/N]? ')).strip().upper()
     if cont == 1:
-        maior = num
-        menor = num
+        maior = menor = num
     elif num > maior:
         maior = num
     elif num < menor:
