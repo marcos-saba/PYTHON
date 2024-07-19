@@ -14,9 +14,9 @@ while opt != 'N':
     if cont == 1:
         maior = num
         menor = num
-    if num > maior:
+    elif num > maior:
         maior = num
-    if num < menor:
+    elif num < menor:
         menor = num
     if opt == 'S':
         cont += 1

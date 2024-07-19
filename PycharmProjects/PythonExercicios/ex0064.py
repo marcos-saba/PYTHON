@@ -1,7 +1,5 @@
 print(f'{' LEITOR NUMÉRICO ':=^50}')
-cont = 0
-num = 0
-soma = 0
+cont = num = soma = 0
 l_num = []
 print('Digite [999] para finalizar.')
 while num != 999:
