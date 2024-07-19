@@ -5,11 +5,11 @@ print('-'*50)
 cont = 1
 pa = p_termo
 print(pa, end='=>')
-while cont != 10:
+while cont < 10:
     cont += 1
     pa += razao
     if cont == 10:
-        print(pa, end='.')
+        print(pa, end='=> FIM.')
     else:
         print(pa, end='=>')
 print('')

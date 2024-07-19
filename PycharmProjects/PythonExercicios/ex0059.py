@@ -20,18 +20,19 @@ while opt != 5:
         if opt == 1:
             print(f'A soma dos valores {num1} e {num2} vale {num1 + num2:.1f}.')
             print('-'*50)
-        if opt == 2:
+        elif opt == 2:
             print(f'A multiplicação dos valores {num1} e {num2} vale {num1*num2:.1f}.')
             print('-'*50)
-        if opt == 3:
+        elif opt == 3:
             maior = num1
             if num2 > maior:
                 maior = num2
             print(f'O maior valor entre {num1} e {num2} é {maior}.')
             print('-'*50)
-        if opt == 4:
+        elif opt == 4:
             num1 = float(input('Digite o primeiro valor: '))
             num2 = float(input('Digite o segundo valor: '))
+        sleep(2)
 print(f'{'Finalizando...':^50}')
 sleep(1)
 print('-'*50)

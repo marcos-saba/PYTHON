@@ -19,9 +19,11 @@ else:
    print(f'{a}->{b}', end='->')
    while cont < n-1:
       f = a + b
-      if a >= 2:
+      if a > 1:
          b = a
       a = f
+      #a = b
+      #b = f
       if cont == n-2:
          print(f, end='')
       else:
