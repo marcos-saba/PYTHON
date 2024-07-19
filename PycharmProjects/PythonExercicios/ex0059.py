@@ -1,3 +1,4 @@
+from time import sleep
 print(f'{' MENU ':=^50}')
 num1 = float(input('\nDigite o primeiro valor: '))
 num2 = float(input('Digite o segundo valor: '))
@@ -31,5 +32,6 @@ while opt != 5:
         if opt == 4:
             num1 = float(input('Digite o primeiro valor: '))
             num2 = float(input('Digite o segundo valor: '))
-print(f'{'FIM':^50}')
+print(f'{'Finalizando...':^50}')
+sleep(1)
 print('-'*50)
