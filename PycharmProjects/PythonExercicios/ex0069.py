@@ -14,15 +14,15 @@ while True:
     print('-'*25)
     while True:
         continuar = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
-        if continuar in 'SsNn':
+        if continuar in 'SN':
             break
-    if idade > 18:
+    if idade >= 18:
         adulto += 1
-    if sexo in 'Mm':
+    if sexo == 'M':
         homem += 1
-    if sexo in 'Ff' and idade < 20:
+    if sexo == 'F' and idade < 20:
         mulher += 1
-    if continuar in 'Nn':
+    if continuar == 'N':
         break
 print('-'*55)
 print(f'{'FIM':^55}')

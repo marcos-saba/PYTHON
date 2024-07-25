@@ -1,10 +1,12 @@
 from random import randint
-
 print(f'{' JOGO PAR OU ÍMPAR ':=^55}\n')
 cont = 1
 while True:
     jogador = int(input('Diga um valor: '))
-    jogada = str(input('Par ou ímpar? [P/I] ')).upper().strip()[0]
+    while True:
+        jogada = str(input('Par ou ímpar? [P/I] ')).upper().strip()[0]
+        if jogada in 'PIÍ':
+            break
     cpu = randint(0, 10)
     soma = jogador + cpu
     if soma % 2 == 0:
@@ -14,7 +16,7 @@ while True:
     print('-'*55)
     print(f'Você jogou {jogador} e o computador {cpu}. Total de {soma}, deu {res}. ')
     print('-'*55)
-    if res == 'PAR' and jogada in 'Pp' or res == 'ÍMPAR' and jogada in 'Ii':
+    if res == 'PAR' and jogada == 'P' or res == 'ÍMPAR' and jogada in 'IÍ':
         print('Você VENCEU!')
         print('Vamos jogar de novo...')
     else:

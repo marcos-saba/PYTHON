@@ -24,9 +24,33 @@ if cedula < 10:
         cedula -= 1
         ced_1 += 1
 print('-'*45)
-print(f'Notas de R$50,00: {ced_50}')
-print(f'Notas de R$20,00: {ced_20}')
-print(f'Notas de R$10,00: {ced_10}')
-print(f'Notas de R$1,00: {ced_1}')
+if ced_50 > 0:
+    print(f'Cédulas de R$50,00: {ced_50}')
+if ced_20 > 0:
+    print(f'Cédulas de R$20,00: {ced_20}')
+if ced_10 > 0:
+    print(f'Cédulas de R$10,00: {ced_10}')
+if ced_1 > 0:
+    print(f'Cédulas de R$1,00: {ced_1}')
 print('-'*45)
 print('Volte sempre! Tenha um bom dia!')
+'''
+total = valor
+totced = 0
+while True:
+    if total >= ced:
+        total -= ced
+        totced += 1
+    else: 
+        if totced > 0:
+            print(f'Total de {totced} cédulas de R${ced}')
+        if ced == 50:
+            ced = 20
+        elif ced == 20:
+            ced = 10
+        elif ced == 10:
+            ced = 1
+        totced = 0
+        if total == 0:
+            break 
+'''
