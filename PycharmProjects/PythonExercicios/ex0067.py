@@ -5,7 +5,7 @@ while True:
         break
     cont = 1
     print('-'*50)
-    while cont <= 10:
+    while cont <= 10: #pode usar o "for" como alternativa
         r = n*cont
         print(f'{n:>20} x {cont:>2} = {r}')
         cont += 1
